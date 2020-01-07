@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="swiper-container">
+    <!-- Slides wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ... other slides ...
+    </div>
+    <!-- Pagination, if required -->
+    <div class="swiper-pagination"></div>
+</div>
+<div class="swiper-container swiper-init" data-speed="400" data-space-between="40">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ... other slides ...
+    </div>
+</div>
+		<script >var mySwiper = new Swiper('.swiper-container', {
+		speed: 400,
+		spaceBetween: 100});
+var mySwiper = document.querySelector('.swiper-container').swiper
+
+// Now you can use all slider methods like
+mySwiper.slideNext();
+		</script>
+		
+		AOS.init();
+		</script>
+	</body>
+</html>
